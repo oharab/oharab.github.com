@@ -221,11 +221,82 @@ button {  width: auto; overflow: visible; }
 
 
  /* Primary Styles
-    Author: 
+    Author: bpo@robotparade.co.uk
  */
 
+.ie6 #container
+{
+   height:100%;
+}
+body 
+{
+    background-color: #121212;
+    width:960px;
+    margin:20px auto;
+	line-height:1.4em;
+	width:960px;
+}
 
 
+header, section {
+	padding:10px 20px 20px;
+	margin:10px;
+}
+header
+{
+    font-size: 167%;
+    padding-bottom:20px;
+    display:block;
+	position:relative;
+}
+
+article
+{
+    min-height: 200px;
+}
+
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs-hide { display: none !important; }
+
+#aboutMe 
+{
+	float:left;
+	width:228px;
+	text-align:left;
+}
+
+#mycode
+{
+    float:right;
+	width:608px;
+	text-align:left;
+}
+
+footer
+{
+    clear:both;
+    position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+}
+
+
+
+
+
+
+
+
+/*
+ * Media queries for responsive design
+ * These follow after primary styles so they will successfully override. 
+ */
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
 
 
 
